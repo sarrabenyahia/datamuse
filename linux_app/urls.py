@@ -9,5 +9,5 @@ urlpatterns = [
     path("", HomeView.as_view(), name="home"),
     path('',views.index, name="index"),
     path('predict',views.predict,name="predict"),
-    path('result/',views.predict,name="result")
+    path('result/',views.predict,name="result"),
 ]

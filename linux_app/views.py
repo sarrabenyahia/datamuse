@@ -24,11 +24,9 @@ def predict(request):
         get_cherche  = request.POST.get("cherche_moi_ca_stp")
         #cherche_CA = HttpResponse(get_cherche) # ça ne marche pas
         recommandation = reco.running('./model/data.csv',f"{get_cherche}")
-        return render(request,'/Users/sarrabenyahia/Downloads/app/templates/result.html',{'result' : recommandation })
+        return render(request, 'result.html', {'result' : recommandation })
 
-import os
-import sys
-import subprocess
+
 
 # def predict(request):
 #     command_dataget = 'bash data_getter.sh data.csv'

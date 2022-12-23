@@ -1,18 +1,14 @@
 from pathlib import Path
 import os
-
-import dotenv
+import environ
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-dotenv_file = os.path.join(BASE_DIR, ".env")
-if os.path.isfile(dotenv_file):
-    dotenv.load_dotenv(dotenv_file)
 
 # UPDATE secret key
-SECRET_KEY=123432
+SECRET_KEY=123456789654321
 
-DEBUG = True
+DEBUG=True
 
 ALLOWED_HOSTS = ['*']
 

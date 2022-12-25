@@ -60,7 +60,7 @@ class Recommandation():
 
   def results(df,movie_indices):
     # Return the top 10 most similar events
-    return df[['title','lead_text','date_description','cover_url']].iloc[movie_indices]
+    return df[['title','lead_text','date_description','url']].iloc[movie_indices]
 
 def running(PATH, cherche):
     reco1 = Recommandation(PATH, cherche)
@@ -68,8 +68,9 @@ def running(PATH, cherche):
     mtrx = Recommandation.compute_similarity(df,title)
     output = Recommandation.results(df,mtrx)
     output = output.reset_index(drop=True)
-    title = output.loc[0, ['title']]
-    print (output,title)
-    return title
+    #title = output.loc[0, ['title']]
+    return output
+
+
 
 

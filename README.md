@@ -1,17 +1,6 @@
 
 # Datamuse : What to do in Paris ? 
 
-## Table of Contents
-
-* [About the Project](#about_the_project)
-* [Problematic](#prob)
-* [Console Application](#app_docker)
-  * [Installation and launching](#installation_app)
-* [Web Application](#web_app)
-  * [Installation and launching](#installation_webapp)
-  * [Usage](#usage)
-* [Contact](#contact)
-
 <br>
 
 ## About the Project

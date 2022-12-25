@@ -45,7 +45,8 @@ The visual SQL interface is available at http://localhost:8080/.
 
 <!-- WEB APP -->
 ## Web Application
-Our Dash web app allows users to view information about a selected artist() and receive song recommendations using ML. The app is hosted on the local machine at http://localhost:8000/.
+Our Webapp allows users to receive recommendations using NLP. Example : for "Louvre" -> stage musée du louvre 
+The app is hosted on the local machine at http://localhost:8000/.
 
 The main page, or "Home", is just a simple user guide for the app!
 
@@ -95,12 +96,10 @@ It can take 10 minutes for mysql database launching as it depends on request app
 Remark: Don't push Image on Dockerhub because secrets issue is not resolved
 ### Access to our apps:
 
-* MySQL:  http://localhost:8080
-* Dash App: http://localhost:8000
-
+* Django Web App: http://localhost:8000
 
 
 ## Contact
 
-* [Sarra ben Yahia👸](https://github.com/luciegaba) - Sarra.benyahia@etu.univ-paris1.fr
-* [José Ángel García Sánchez👨‍🎓](https://github.com/Yanisreh) - jose-angel.garcia-sanchez@etu.univ-paris1.fr
+* [Sarra ben Yahia👸](https://github.com/sarrabenyahia) - Sarra.benyahia@etu.univ-paris1.fr
+* [José Ángel García Sánchez👨‍🎓](https://github.com/Pse1234) - jose-angel.garcia-sanchez@etu.univ-paris1.fr

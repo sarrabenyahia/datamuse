@@ -29,7 +29,7 @@ class Recommandation():
 
 
   def compute_similarity(df, title):
-    #----------------- def tfidf
+
     #Matrice TFID
     stopwords_list = stopwords.words('french')
     tfidf = TfidfVectorizer(stop_words=stopwords_list)
@@ -38,19 +38,19 @@ class Recommandation():
     # cosine similarity matrix
     cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)
 
-    #Construct a reverse map of indices and movie titles
+    #Construct a reverse map of indices and  titles
     indices = pd.Series(df.index, index=df[SELECTION]).drop_duplicates()
 
     # Get the index of the event that matches the title
     idx = indices[title]
 
-    # Get the pairwsie similarity scores of all movies with that movie
+    # Get the pairwsie similarity scores of all activities with that activity
     sim_scores = list(enumerate(cosine_sim[idx]))
 
     # Sort the events based on the similarity scores
     sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
 
-    # Get the scores of the 10 most similar movies
+    # Get the scores of the 10 most similar activities
     sim_scores = sim_scores[1:4]
 
     # Get the event indices
@@ -60,7 +60,7 @@ class Recommandation():
 
   def results(df,movie_indices):
     # Return the top 10 most similar events
-    return df[['title','lead_text','date_description','url']].iloc[movie_indices]
+    return df[['title','lead_text','date_start','date_end','address_street','price_type','url']].iloc[movie_indices]
 
 def running(PATH, cherche):
     reco1 = Recommandation(PATH, cherche)
@@ -68,7 +68,6 @@ def running(PATH, cherche):
     mtrx = Recommandation.compute_similarity(df,title)
     output = Recommandation.results(df,mtrx)
     output = output.reset_index(drop=True)
-    #title = output.loc[0, ['title']]
     return output
 
 

@@ -76,8 +76,10 @@ bash launch.sh [keyword]
 
 ### Access to our app:
 
-* Django Web App: http://localhost:8000
+* Django Web App: http://127.0.0.1:8000
 
+## Note
+* Our Web App is ready for deployement in a web server but a .env file with manage.py : debug and secret_key must be created to maintain security top.
 
 ## Contact
 

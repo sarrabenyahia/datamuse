@@ -81,7 +81,8 @@ bash launch.sh [keyword]
 ## Note
 * Our Web App is ready for deployement in a web server but a .env file with manage.py : debug and secret_key must be created to maintain a certain security level.
 * Link to our presentation on canva : https://www.canva.com/design/DAFVY1C0EO4/q6OMxjwykrttN0HMmBHwcA/view?utm_content=DAFVY1C0EO4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
-* [Datamuse.pdf](https://github.com/sarrabenyahia/datamuse/files/10300781/Datamuse.pdf)
+* [Datamuse .pdf](https://github.com/sarrabenyahia/datamuse/files/10300785/Datamuse.4.pdf)
+
 
 ## Contact
 

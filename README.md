@@ -48,7 +48,7 @@ cd app_docker
 ```sh
 source install.sh
 ```
-3. Launch the application with the keyword of your choice (keep in mind to translate your searches in french :France:) for example : Louvre
+3. Launch the application with the keyword of your choice (keep in mind to translate your searches in french :France: ) for example : Louvre
 ```sh
 bash launch.sh [keyword]
 ```

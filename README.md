@@ -59,7 +59,7 @@ The second tab is a simple recommendation system. The project is not focused on 
 In order to run the code, you will need to create API access for Spotify and Lastfm. It's free so don't hesitate to make it! (https://developer.spotify.com/dashboard/ and https://www.last.fm/api/account/create)
 1. Clone the repository
 ```sh
-git clone https://github.com/luciegaba/spotify_app
+https://github.com/sarrabenyahia/datamuse.git
 ```
 2. Change your current working directory
 ```sh
@@ -101,5 +101,5 @@ Remark: Don't push Image on Dockerhub because secrets issue is not resolved
 
 ## Contact
 
-* [Sarra ben Yahia👸](https://github.com/sarrabenyahia) - Sarra.benyahia@etu.univ-paris1.fr
-* [José Ángel García Sánchez👨‍🎓](https://github.com/Pse1234) - jose-angel.garcia-sanchez@etu.univ-paris1.fr
+* [Sarra ben Yahia 👩🏻‍💻](https://github.com/sarrabenyahia) - Sarra.benyahia@etu.univ-paris1.fr
+* [José Ángel García Sánchez 👨🏻‍💻](https://github.com/Pse1234) - jose-angel.garcia-sanchez@etu.univ-paris1.fr

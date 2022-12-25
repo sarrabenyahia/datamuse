@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  django:
+    image: django-docker:0.01
+    build: .
+    command: sh -c "python manage.py makemigrations &&
+                    python manage.py migrate && 
+                    python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"

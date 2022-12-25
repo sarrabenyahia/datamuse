@@ -63,7 +63,7 @@ https://github.com/sarrabenyahia/datamuse.git
 ```
 2. Change your current working directory
 ```sh
-cd spotify_app
+cd webapp
 ```
 3. Create a .env file like the following one:
 ```sh
@@ -94,7 +94,7 @@ If errors, check docker df, group, and eventually use ```docker system prune ```
 It can take 10 minutes for mysql database launching as it depends on request app service. Same for dash app which depends on mysql.. Containers that could be affected by dependences have "restarted always" option so it should cause problem.
 
 Remark: Don't push Image on Dockerhub because secrets issue is not resolved
-### Access to our apps:
+### Access to our app:
 
 * Django Web App: http://localhost:8000
 

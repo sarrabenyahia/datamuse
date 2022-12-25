@@ -40,6 +40,8 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="navbar-nav">
             <a class="nav-link " aria-current="page" href="{% url 'home' %}">Home</a>
+            <a class="nav-link" href="#pepezapa">Personnal recommandation</a>
+            <a class="nav-link" href="#qsn">Random recommandation</a>
           </div>
         </div>
       </div>
@@ -52,17 +54,23 @@
   <div class="responsive">
     <div><img src="{% static 'templates/Assets/results.png' %}" alt="" width="100%" height="100%"></div>
   </div>
-  
-  <br>
-  <br>
-  <br>
-<div class="container" style="overflow-x:auto;">
+
+
+  <div id="pepezapa">
+    <div class="mid" style="background-color: #863551;" >
+      <h1>Your personnal recommandations</h1>
+    </div>
+ 
+  <div class="container" style="overflow-x:auto;">
     <table class="table table-striped">
         <thead>
            <tr>
                <th>Activity</th>
                <th>Description</th>
-               <th>Date</th>
+               <th>Start Date</th>
+               <th>End Date</th>
+               <th>Adress</th>
+               <th>Pricings</th>
                <th>Url to access</th>
            </tr>
        </thead>
@@ -72,7 +80,10 @@
            <tr>
                <td>{{i.title}}</td>
                <td>{{i.lead_text}}</td>
-               <td>{{i.date_description}}</td>
+               <td>{{i.date_start}}</td>
+               <td>{{i.date_end}}</td>
+               <td>{{i.address_street}}</td>
+               <td>{{i.price_type}}</td>
                <td>{{i.url}}</td>
            </tr>
            {% endfor %}
@@ -80,3 +91,72 @@
        </tbody>
    </table>
    </div>
+
+
+  <div style="background-color: #863551;">
+    <div class="mid">
+      <h1></h1>
+        </div>
+          <div class="mid-detail" id="qsn">
+            <div class="mid">
+              <h2>Feeling spontaneous?</h2>
+                <p>
+                  You can try this recommandation system that provides system that provides the functionality
+    </div>
+  </div>
+
+
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <img src="{% static 'templates/Assets/logobleu.png' %}" alt="" width="100" height="50" class="img-fluid"
+            style="margin-bottom: 3%;">
+
+          <p><i> Convinced that art is a vehicle for emancipation and better living together, Datamuse aims to
+              promote current artistic activities in all its forms and to make it accessible to all, free of charge. </i>
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Thanks for visiting Datamuse</h4>
+          <p><i>
+              We hope to see you soon Elia! :)
+
+            </i></p>
+        </div>
+        <div class="footer-col">
+          <h4>Our github</h4>
+          <p><i>
+              https://github.com/Pse1234/linux_mosef
+            </i></p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p><i>
+              José Angel Garcia Sanchez : Jose-Angel.Garcia-Sanchez@etu.univ-paris1.fr
+              Sarra Ben Yahia : Sarra.Ben-Yahia@etu.univ-paris1.fr
+            </i></p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="{% static 'templates/JS/script.js' %}"></script>
+</body>
+
+</html>

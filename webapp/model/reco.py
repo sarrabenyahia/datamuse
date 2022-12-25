@@ -7,6 +7,9 @@ from sklearn.metrics.pairwise import linear_kernel
 
 SELECTION = 'title'
 
+
+
+
 class Recommandation():
 
 
@@ -67,9 +70,5 @@ def running(PATH, cherche):
     df,title = reco1.inputer()
     mtrx = Recommandation.compute_similarity(df,title)
     output = Recommandation.results(df,mtrx)
-    output = output.reset_index(drop=True)
+    output = output.reset_index()
     return output
-
-
-
-

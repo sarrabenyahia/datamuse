@@ -7,8 +7,7 @@ from sklearn.metrics.pairwise import linear_kernel
 
 
 import sys
-data = sys.argv[1] # prints var1
-research = sys.argv[2] # prints var2
+research = sys.argv[1] # prints var2
 SELECTION = 'title'
 
 class Recommandation():
@@ -75,5 +74,5 @@ def run(PATH, input):
 
 
 
-run(data,research)
+run("/app/data.csv", research)
 

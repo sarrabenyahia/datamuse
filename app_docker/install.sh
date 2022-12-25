@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t datamuse .
+sudo docker build -t datamuse .

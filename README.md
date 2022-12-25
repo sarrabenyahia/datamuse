@@ -101,5 +101,5 @@ Remark: Don't push Image on Dockerhub because secrets issue is not resolved
 
 ## Contact
 
-* [Sarra ben Yahia 👩🏻‍💻](https://github.com/sarrabenyahia) - Sarra.benyahia@etu.univ-paris1.fr
+* [Sarra Ben Yahia 👩🏻‍💻](https://github.com/sarrabenyahia) - Sarra.benyahia@etu.univ-paris1.fr
 * [José Ángel García Sánchez 👨🏻‍💻](https://github.com/Pse1234) - jose-angel.garcia-sanchez@etu.univ-paris1.fr

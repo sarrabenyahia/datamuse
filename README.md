@@ -6,10 +6,9 @@
 * [About the Project](#about_the_project)
 * [Problematic](#prob)
 * [Console Application](#app_docker)
-  * [Installation](#installation_app)
+  * [Installation and launching](#installation_app)
 * [Web Application](#web_app)
-  * [Installation](#installation_webapp)
-  * [Lauching the app](#launch_app)
+  * [Installation and launching](#installation_webapp)
   * [Usage](#usage)
 * [Contact](#contact)
 
@@ -34,7 +33,7 @@ The project is built in two parts.
 ## app_docker:
 The first part is the console version of the final application, our "beta-application" if you want. This version of the application takes into account two arguments : the data as a csv file, and the keyword that serves as your research (for example, Louvre, Opéra, or even Picasso) to let the recommendation system find the most similar events to suggest to the user.
 
-### Installation console application:
+### Installation and launching of the console application:
 
 1. Clone the repository
 ```sh
@@ -44,15 +43,14 @@ https://github.com/sarrabenyahia/datamuse.git
 ```sh
 cd app_docker
 ```
-3. Change your current working directory
+3. Install required dependencies
 ```sh
 source install.sh
 ```
-3. Launch the application with the keyword of your choice (keep in mind to translate your searches in french :France: ) for example : Louvre
+3. Launch the application with the keyword of your choice (keep in mind to translate your searches in french 🇫🇷 for example : Louvre)
 ```sh
 bash launch.sh [keyword]
 ```
-
 
 <!-- WEB APP -->
 ## web_app
@@ -68,10 +66,8 @@ After mastering the console application and having dockerized it, we challenged 
 - An HTML page is rendered with that serves as a home page to explain the purpose of the project to the user (File: webapp/linux_app/templates/result.html)
 - An HTML page is rendered with the form and the recommended events. (File: webapp/linux_app/templates/result.html)
 
+### Installation and launching of the django webapp
 
-
-### Installation
-In order to run the code, you will need to create API access for Spotify and Lastfm. It's free so don't hesitate to make it! (https://developer.spotify.com/dashboard/ and https://www.last.fm/api/account/create)
 1. Clone the repository
 ```sh
 https://github.com/sarrabenyahia/datamuse.git
@@ -80,18 +76,15 @@ https://github.com/sarrabenyahia/datamuse.git
 ```sh
 cd webapp
 ```
-
-
-
-4. Launch shell script to make apps running
-(Click on yes for csv options if you have csv and need it to avoid long requests..)
+3. Install required dependencies
 ```sh
-bash launch.sh
+source install.sh
 ```
-If errors, check docker df, group, and eventually use ```docker system prune ```
-It can take 10 minutes for mysql database launching as it depends on request app service. Same for dash app which depends on mysql.. Containers that could be affected by dependences have "restarted always" option so it should cause problem.
+3. Launch the application with the keyword of your choice (keep in mind to translate your searches in french 🇫🇷 for example : Louvre)
+```sh
+bash launch.sh [keyword]
+```
 
-Remark: Don't push Image on Dockerhub because secrets issue is not resolved
 ### Access to our app:
 
 * Django Web App: http://localhost:8000

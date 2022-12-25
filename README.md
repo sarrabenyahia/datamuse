@@ -20,22 +20,17 @@ The following project is realized as part of the Linux course given by the MoSEF
 
 In this repository, you will find the following elements:
 * A canva presentation 'Datamuse' to explain the purpose of our project. 
-* A Docker-compose.yml which orchestrates the containers.
-* Some Docker Images each folder corresponds to an Image to build (with Python)):
-    * collect_from_spotify_api : Request data from Spotify with Python (with Spotipy package)
-    * dash_app_analytics : Create a user web-app on local host with Dash
-
+* A webapp folder and an app_docker folder
 
 
 ## Problematic
 
 After spending several days in Paris or living permanently in Paris, you have already visited all the museums. What activity can I do? Less known museums, concerts, shows... Write what you want and we will advise you!
 
-The project is built around 4 containers (available on the docker-compose): the data collection (+ sending to MySQL)
-the SQL database, the SQL database viewer and the web-app.
+The project is built in two parts. 
 <br>
 
-## MySQL app:
+## app_docker:
  This container is just as important, if not more so, for people who do/want to do data science. We particularly wanted to make a MySQL database because it allows us to store data in a structured way that can easily be used in languages other than Python.
 The database consists of a table for artists and another for songs. In the latter, users can find features about the song (such as its acousticness, danceability score, etc. - see Spotify documentation at https://developer.spotify.com/discover/#audio-features-analysis).
 To populate this database, we use the collect_from_spotify_api container, which uses the Python Spotipy package to request data. I encourage you to check out the documentation for more information.

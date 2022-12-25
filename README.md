@@ -19,7 +19,7 @@ The project is built in two parts.
 
 
 <!-- Console Application -->
-## app_docker:
+## Console Application:
 The first part is the console version of the final application, our "beta-application" if you want. This version of the application takes into account two arguments : the data as a csv file, and the keyword that serves as your research (for example, Louvre, Opéra, or even Picasso) to let the recommendation system find the most similar events to suggest to the user.
 
 ### Installation and launching of the console application:
@@ -42,7 +42,7 @@ bash launch.sh [keyword]
 ```
 
 <!-- WEB APP -->
-## web_app
+## Web application
 Our Webapp allows users to receive recommendations using NLP and similarity computing with the TF-IDF cosine similarity matrix.
 The app is hosted on the local machine at http://localhost:8000/.
 
@@ -80,6 +80,7 @@ bash launch.sh [keyword]
 
 ## Note
 * Our Web App is ready for deployement in a web server but a .env file with manage.py : debug and secret_key must be created to maintain a certain security level.
+* Link to our presentation on canva : https://www.canva.com/design/DAFVY1C0EO4/q6OMxjwykrttN0HMmBHwcA/view?utm_content=DAFVY1C0EO4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 ## Contact
 

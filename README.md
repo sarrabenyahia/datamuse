@@ -14,13 +14,12 @@
 <br>
 
 ## About the Project
-The following project is realized as part of the Linux course given by the MoSEF Master at the University of Paris 1 Panthéon-Sorbonne. The main goal is to deploy an app with Docker or with a simple shell file. 
-This was very challenging and really cool to realize!
+The following project is realized as part of the Linux course given by the MoSEF Master at the University of Paris 1 Panthéon-Sorbonne. The main goal is to deploy an app with Docker or with a simple shell file. We have decided to make an NLP model based on TF-IDF to make recommendations from opendata.paris.fr
 
 
 
 In this repository, you will find the following elements:
-* A canva presentation 'French Rap Data Analytics' to explain the purpose of our project. 
+* A canva presentation 'Datamuse' to explain the purpose of our project. 
 * A Docker-compose.yml which orchestrates the containers.
 * Some Docker Images each folder corresponds to an Image to build (with Python)):
     * collect_from_spotify_api : Request data from Spotify with Python (with Spotipy package)
@@ -30,7 +29,7 @@ In this repository, you will find the following elements:
 
 ## Problematic
 
-This project aims to help music fans, particularly French rap fans, understand their affinity for music using data science. To do this, this project includes a MySQL database and a Dash web application that provides an overview of artists and recommendations based on a machine learning model. 
+After spending several days in Paris or living permanently in Paris, you have already visited all the museums. What activity can I do? Less known museums, concerts, shows... Write what you want and we will advise you!
 
 The project is built around 4 containers (available on the docker-compose): the data collection (+ sending to MySQL)
 the SQL database, the SQL database viewer and the web-app.

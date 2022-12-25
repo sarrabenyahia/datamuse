@@ -1,3 +1,1 @@
-virtualenv venv 
-source ./venv/bin/activate
-pip install -r requirements.txt
+sudo docker build -t datamuse_webapp .

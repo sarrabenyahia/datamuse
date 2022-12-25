@@ -1,6 +1,9 @@
 #!/bin/bash
+echo "Launching Docker-compose"
 
-bash ./model/data_getter.sh ./model/data.csv
+sudo docker compose -f "docker-compose.yml" up -d --build
 
-python manage.py migrate
-python manage.py runserver
+echo "Done !"
+echo ""
+echo "Check docker ps to see if containers run"
+echo "If there is problems, report logs "

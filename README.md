@@ -65,7 +65,7 @@ https://github.com/sarrabenyahia/datamuse.git
 ```sh
 cd webapp
 ```
-3. Install required dependencies
+3. Install required dependencies 
 ```sh
 source install.sh
 ```
@@ -79,9 +79,12 @@ bash launch.sh [keyword]
 * Django Web App: http://127.0.0.1:8000
 
 ## Note
-* Our Web App is ready for deployement in a web server but a .env file with manage.py : debug and secret_key must be created to maintain security top.
+* Our Web App is ready for deployement in a web server but a .env file with manage.py : debug and secret_key must be created to maintain a certain security level.
 
 ## Contact
 
 * [Sarra Ben Yahia 👩🏻‍💻](https://github.com/sarrabenyahia) - Sarra.benyahia@etu.univ-paris1.fr
 * [José Ángel García Sánchez 👨🏻‍💻](https://github.com/Pse1234) - jose-angel.garcia-sanchez@etu.univ-paris1.fr
+
+## Acknowledgments
+* A special thank you to @eliamosef for introducing and teaching us the basics in his linux course!

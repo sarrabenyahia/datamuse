@@ -32,7 +32,7 @@ class Recommandation():
 
 
   def compute_similarity(df, title):
-    #----------------- def tfidf
+
     #Matrice TFID
     stopwords_list = stopwords.words('french')
     tfidf = TfidfVectorizer(stop_words=stopwords_list)
@@ -41,19 +41,19 @@ class Recommandation():
     # cosine similarity matrix
     cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)
     
-    #Construct a reverse map of indices and movie titles
+    #Construct a reverse map of indices and events titles
     indices = pd.Series(df.index, index=df[SELECTION]).drop_duplicates()
 
     # Get the index of the event that matches the title
     idx = indices[title]
 
-    # Get the pairwsie similarity scores of all movies with that movie
+    # Get the pairwsie similarity scores of all movies with that event
     sim_scores = list(enumerate(cosine_sim[idx]))
 
     # Sort the events based on the similarity scores
     sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
 
-    # Get the scores of the 10 most similar movies
+    # Get the scores of the 10 most similar events
     sim_scores = sim_scores[1:4]
 
     # Get the event indices

@@ -6,6 +6,8 @@
 ## About the Project
 The following project is realized as part of the Linux course given by the MoSEF Master at the University of Paris 1 Panthéon-Sorbonne. The main goal is to deploy an app with Docker or with a simple shell file. We have decided to backend the application with a NLP model based on TF-IDF to make recommendations from opendata.paris.fr
 
+![Alt Text](https://github.com/sarrabenyahia/datamuse/blob/main/img/Capture%20d%E2%80%99%C3%A9cran%202023-06-06%20%C3%A0%2015.12.01.png)
+
 In this repository, you will find the following elements:
 * A canva presentation 'Datamuse' to explain the purpose of our project. 
 * A webapp folder and an app_docker folder
@@ -74,15 +76,15 @@ source install.sh
 bash launch.sh [keyword]
 ```
 
+![Alt Text](https://github.com/sarrabenyahia/datamuse/blob/main/img/Capture%20d%E2%80%99%C3%A9cran%202023-06-06%20%C3%A0%2015.12.33.png)
+
 ### Access to our app:
 
 * Django Web App: http://127.0.0.1:8000
 
 ## Note
 * Our Web App is ready for deployement in a web server but a .env file with manage.py : debug and secret_key must be created to maintain a certain security level.
-* Link to our presentation on canva : https://www.canva.com/design/DAFVY1C0EO4/q6OMxjwykrttN0HMmBHwcA/view?utm_content=DAFVY1C0EO4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
-* [Datamuse .pdf](https://github.com/sarrabenyahia/datamuse/files/10300785/Datamuse.4.pdf)
-
+* Our presentation on [canva](https://www.canva.com/design/DAFVY1C0EO4/q6OMxjwykrttN0HMmBHwcA/view?utm_content=DAFVY1C0EO4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## Contact
 

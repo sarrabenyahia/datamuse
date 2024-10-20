@@ -89,7 +89,7 @@ bash launch.sh [keyword]
 ## Contact
 
 * [Sarra Ben Yahia 👩🏻‍💻](https://github.com/sarrabenyahia) - Sarra.benyahia@etu.univ-paris1.fr
-* [José Ángel García Sánchez 👨🏻‍💻](https://github.com/Pse1234) - jose-angel.garcia-sanchez@etu.univ-paris1.fr
+* [José Ángel García Sánchez 👨🏻‍💻](https://github.com/JoseAngelGarciaSanchez) - jose-angel.garcia-sanchez@etu.univ-paris1.fr
 
 ## Acknowledgments
 * A special thank you to @eliamosef for introducing and teaching us the basics in his linux course!
